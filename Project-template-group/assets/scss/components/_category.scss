@@ -1,0 +1,9 @@
+.category{
+    &__container{
+        height:80px;
+        background-color: red;
+        .images{
+            display: flex;
+        }
+    }
+}

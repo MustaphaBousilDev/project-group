@@ -1,0 +1,7 @@
+.category__container {
+  height: 80px;
+  background-color: red;
+}
+.category__container .images {
+  display: flex;
+}
