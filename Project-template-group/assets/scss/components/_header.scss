@@ -27,7 +27,7 @@
         }
     }
     &__menu{
-        @media screen and (max-width:767px){
+        @media screen and (max-width:767px){///834px
             position: fixed;
             background-color: var(--container-color);
             box-shadow: 0 0 4px rgba(0,0,0,.1) ;
