@@ -1,10 +1,13 @@
 @import 'config/variables';
 @import 'base/base';
+@import 'theme/theme';
 
 @import 'layout/layout';
 @import 'components/header';
 @import 'components/home';
 @import 'components/section';
+@import 'components/post';
+@import 'components/work';
 @import 'components/buttons';
 @import 'components/about-us';
 @import 'components/category';

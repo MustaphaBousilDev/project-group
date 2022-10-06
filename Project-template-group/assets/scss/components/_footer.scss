@@ -1,0 +1,81 @@
+.footer{
+    &__container{
+        background-color:var(--title-color);
+        min-height:250px;
+        border-radius:4px;
+        padding:20px;
+        display: flex;
+        @media screen and (max-width:780px){
+            flex-direction: column;
+        }
+        .info{
+            flex:5;
+            //background-color: red;
+            padding:40px;
+            @media(max-width:900px){
+                padding: 20px;
+            }
+            p{
+                word-spacing:-2px;
+                color:#fff;
+                font-size: 13px;
+            }
+            .social{
+                margin-top: 20px;
+                display: flex;
+                
+                i{
+                    width:30px;height:30px;
+                    display: flex;justify-content: center;
+                    align-items: center;
+                    font-size: 20px;
+                    border-radius: 50%;
+                    font-weight: normal;
+                    margin-left: 5px;
+                    color:#fff;
+                }
+                .facebook{background-color: #3b5998;}
+                .whatsap{background-color: #25D366;}
+                .instagram{background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(215,147,21,1) 0%, rgba(255,21,172,1) 39%, rgba(206,59,188,1) 71%, rgba(156,96,204,1) 100%, rgba(181,77,196,1) 100%, rgba(140,108,209,1) 100%, rgba(82,151,228,1) 100%, rgba(0,212,255,1) 100%);
+                }
+            }
+        }
+        .links{
+            flex:7;
+            //background-color: yellow;
+            padding:20px 10px;
+            display: flex;
+            justify-content: flex-end;
+            .box{
+                h3{color:#fff;}
+                margin-left: 40px;
+                a{color:#fff;}
+            }
+            @media (max-width:780px){
+                    justify-content: flex-start;
+                    padding:5px;
+                    .box{
+                        width: 25%;
+                        margin-left: 0;
+                    }
+            }
+            @media (max-width:500px){
+                flex-direction: column;
+                padding-left:20px;
+                .box{
+                    width: 50%;
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
+            }
+            
+        }
+    }
+    @media screen and (max-width:750px){
+        margin-top: 400px;
+    }
+    @media screen and (max-width:600px){
+        margin-top: 1100px;
+    }
+    
+}

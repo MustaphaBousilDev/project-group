@@ -1,0 +1,100 @@
+.about-us__container {
+  margin-top: 20px;
+  min-height: 500px;
+  display: flex;
+}
+.about-us__container .img-left {
+  flex: 3;
+}
+.about-us__container .img-left img {
+  width: 100%;
+  height: 100%;
+}
+.about-us__container .info {
+  flex: 6;
+  padding: 40px;
+}
+.about-us__container .info .info-details p {
+  display: flex;
+}
+.about-us__container .info .info-details p i {
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background: linear-gradient(90deg, #020024 0%, #d79315 0%, #ff15ac 39%, #ce3bbc 71%, #9c60cc 100%, #b54dc4 100%, #8c6cd1 100%, #5297e4 100%, #00d4ff 100%);
+}
+.about-us__container .info h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.about-us__container .info span {
+  font-size: 12px;
+  line-height: 5px;
+}
+@media screen and (max-width: 800px) {
+  .about-us__container .info span {
+    line-height: -5;
+  }
+}
+.about-us__container .info .buttons {
+  width: 40%;
+  background: linear-gradient(90deg, #020024 0%, #d79315 0%, #ff15ac 39%, #ce3bbc 71%, #9c60cc 100%, #b54dc4 100%, #8c6cd1 100%, #5297e4 100%, #00d4ff 100%);
+  margin: auto;
+  margin-top: 60px;
+  text-align: center;
+  border-radius: 6px;
+}
+.about-us__container .info .buttons a {
+  font-size: 12px;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 10px 5px;
+  display: inline-block;
+}
+@media screen and (max-width: 1024px) {
+  .about-us__container .info .buttons {
+    width: 70%;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .about-us__container .info .buttons {
+    width: 90%;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about-us__container .info {
+    padding: 20px;
+  }
+}
+.about-us__container .img-right {
+  flex: 3;
+}
+.about-us__container .img-right img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .about-us__container .img-left, .about-us__container .info, .about-us__container .img-right {
+    flex: 4;
+  }
+}
+@media screen and (max-width: 750px) {
+  .about-us__container {
+    flex-direction: column;
+  }
+  .about-us__container .img-left, .about-us__container .info, .about-us__container .img-right {
+    height: 500px;
+  }
+  .about-us__container .info {
+    background-color: #f4eeee;
+  }
+}

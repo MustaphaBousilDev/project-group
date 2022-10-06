@@ -1,0 +1,15 @@
+body.dark-theme{
+    --first-color: hsl(var(--hue), var(--sat),75%);
+    --title-color: hsl(60, 1%, 39%);
+    --text-color: hsl(var(--hue), 4%,80%);
+    --body-color: hsl(var(--hue), 8%, 13%);
+    --container-color: hsl(var(--hue), 8%, 16%);
+    --scroll-bar-color: hsl(var(--hue), 4%,32%);
+    --scroll-thumb-color: hsl(var(--hue), 4%,24%);
+}
+/*===========Button Dark/Light===============*/
+.change-theme{
+   
+    color:var(--title-color);font-size: 1.8rem;
+    cursor: pointer;
+}
