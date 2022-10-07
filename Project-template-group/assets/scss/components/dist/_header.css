@@ -80,3 +80,18 @@
 .scroll-header {
   box-shadow: 0 2px 4px rgba(7, 7, 7, 0.1);
 }
+
+/*active link*/
+.active-link {
+  position: relative;
+}
+.active-link::before {
+  content: "";
+  position: absolute;
+  bottom: -0.75rem;
+  left: 45%;
+  width: 5px;
+  height: 5px;
+  background-color: var(--title-color);
+  border-radius: 50%;
+}
