@@ -1,0 +1,150 @@
+.signup-body .nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.signup-body .nav__compt {
+  display: flex;
+}
+.signup-body .nav__compt-login {
+  flex: 1;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.signup-body .nav__compt-login:hover {
+  color: #fff;
+  background-color: #000;
+}
+.signup-body .nav__compt-signup {
+  padding: 5px 14px;
+  border-radius: 6px;
+  color: #000;
+  transition: 0.3s;
+  color: #fff;
+  background-color: #000;
+}
+.signup-body .signup {
+  margin-top: 72px;
+  height: 500px;
+  padding: 30px 0px;
+}
+@media screen and (max-width: 1080px) {
+  .signup-body .signup {
+    padding: 30px 0px;
+  }
+}
+.signup-body .signup h1 {
+  text-align: center;
+}
+.signup-body .signup .content {
+  width: 100%;
+  height: 100%;
+}
+.signup-body .signup .content form {
+  width: 100%;
+  min-height: calc(100% - 60px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #948d8d;
+  border-radius: 4px;
+}
+@media screen and (max-width: 800px) {
+  .signup-body .signup .content form {
+    padding: 10px;
+  }
+}
+.signup-body .signup .content form .box {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+}
+@media screen and (max-width: 600px) {
+  .signup-body .signup .content form .box {
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
+.signup-body .signup .content form .box .field {
+  flex: 1;
+  padding: 5px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.signup-body .signup .content form .box .field input {
+  width: 100%;
+  margin: 0 auto;
+  padding: 13px 30px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #736d6d;
+}
+@media screen and (max-width: 600px) {
+  .signup-body .signup .content form .box .field input {
+    padding: 8px 30px;
+  }
+}
+.signup-body .signup .content form .box .field input:focus, .signup-body .signup .content form .box .field input:focus + i {
+  color: #000;
+  border-color: #000;
+}
+.signup-body .signup .content form .box .field i {
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.signup-body .signup .content form .re {
+  margin-top: 5px;
+  padding-left: 20px;
+  font-size: 11px;
+  display: flex;
+  color: #adabab;
+}
+.signup-body .signup .content form .re input {
+  margin-right: 5px;
+}
+.signup-body .signup .content form .re a {
+  font-size: 10px;
+  color: #5e5eef;
+  font-weight: bold;
+}
+.signup-body .signup .content form .btns {
+  padding-left: 20px;
+}
+.signup-body .signup .content form .btns button {
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  background-color: #5858ff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+.signup-body .signup .content form .btns button:hover {
+  opacity: 1;
+}
+.signup-body .signup .content form .link-sign {
+  padding-left: 20px;
+  font-size: 12px;
+}
+@media screen and (max-width: 600px) {
+  .signup-body .signup .content form .link-sign {
+    margin-top: 0;
+  }
+}
+.signup-body .signup .content form .link-sign a {
+  color: #5858ff;
+  letter-spacing: -1px;
+}
+.signup-body .footer {
+  margin-top: 0;
+}

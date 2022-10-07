@@ -1,0 +1,215 @@
+.login-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.login-body .nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login-body .nav__compt {
+  display: flex;
+}
+.login-body .nav__compt-login {
+  flex: 1;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+  color: #fff;
+  background-color: #000;
+}
+.login-body .nav__compt-signup {
+  padding: 5px 14px;
+  border-radius: 6px;
+  color: #000;
+  transition: 0.3s;
+}
+.login-body .nav__compt-signup:hover {
+  color: #fff;
+  background-color: #000;
+}
+.login-body .login {
+  margin-top: 72px;
+  height: 550px;
+  padding: 10px;
+}
+@media screen and (max-width: 1085px) {
+  .login-body .login {
+    height: 500px;
+  }
+}
+.login-body .login h1 {
+  text-align: center;
+}
+.login-body .login .content {
+  border: 1px solid #b8b8b8;
+  height: 90%;
+  display: flex;
+}
+@media screen and (max-width: 600px) {
+  .login-body .login .content {
+    width: 100%;
+  }
+}
+.login-body .login .content form {
+  flex: 1;
+  order: 2;
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 1085px) {
+  .login-body .login .content form {
+    padding: 40px 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .login-body .login .content form {
+    padding: 40px 10px;
+  }
+}
+.login-body .login .content form .field {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+@media screen and (max-width: 1085px) {
+  .login-body .login .content form .field {
+    min-height: 60px;
+  }
+}
+.login-body .login .content form .field input {
+  width: 100%;
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  border-bottom: 1px solid #d4cccc;
+}
+@media screen and (max-width: 1085px) {
+  .login-body .login .content form .field input {
+    padding: 15px 30px;
+  }
+}
+.login-body .login .content form .field input::placeholder {
+  margin-left: 60px;
+  color: #d4cccc;
+}
+.login-body .login .content form .field input:focus + i.email,
+.login-body .login .content form .field input:focus + i.lock {
+  color: #333;
+}
+.login-body .login .content form .field input:focus {
+  border-color: #333;
+}
+.login-body .login .content form .field i.email, .login-body .login .content form .field i.lock {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #d4cccc;
+}
+.login-body .login .content form .field.buttons {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.login-body .login .content form .field.buttons .remember {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.login-body .login .content form .field.buttons .remember .re {
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+}
+.login-body .login .content form .field.buttons .remember .re input {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.login-body .login .content form .field.buttons .remember a {
+  font-size: 12px;
+  text-decoration: underline;
+}
+@media screen and (max-width: 500px) {
+  .login-body .login .content form .field.buttons .remember a {
+    font-size: 8px;
+  }
+}
+.login-body .login .content form .field.buttons .log-btn {
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.login-body .login .content form .field.buttons .log-btn button {
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 10px;
+  color: #fff;
+  transition: opacity 0.3s;
+  height: 40px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.login-body .login .content form .field.buttons .log-btn button:hover {
+  opacity: 1;
+}
+.login-body .login .content form .field.buttons .log-btn button.log {
+  background-color: #2766ed;
+}
+.login-body .login .content form .field.buttons .log-btn button.goo {
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #636161;
+}
+.login-body .login .content form .field.buttons .log-btn button.goo svg {
+  width: 30px;
+  height: 30px;
+}
+.login-body .login .content form .link-sign {
+  margin-top: 180px;
+  font-size: 11px;
+}
+@media screen and (max-width: 1085px) {
+  .login-body .login .content form .link-sign {
+    margin-top: 90px;
+  }
+}
+.login-body .login .content form .link-sign a {
+  font-size: 12px;
+  color: #2766ed;
+}
+.login-body .login .content .image {
+  flex: 1;
+  order: 1;
+}
+@media screen and (max-width: 1085px) {
+  .login-body .login .content .image {
+    display: none;
+  }
+}
+.login-body .login .content .image img {
+  width: 100%;
+  height: 100%;
+}
+.login-body .footer {
+  margin-top: 0;
+}

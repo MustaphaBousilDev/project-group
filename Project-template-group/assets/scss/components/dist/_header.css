@@ -22,14 +22,24 @@
   display: inline-block;
   margin-right: 10px;
   padding: 5px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.nav__compt-login:hover {
+  color: #fff;
+  background-color: #000;
 }
 .nav__compt-signup {
   padding: 5px 14px;
   border-radius: 6px;
-  color: #fff;
-  background-color: black;
+  color: #000;
+  transition: 0.3s;
 }
-@media screen and (max-width: 767px) {
+.nav__compt-signup:hover {
+  color: #fff;
+  background-color: #000;
+}
+@media screen and (max-width: 850px) {
   .nav__menu {
     position: fixed;
     background-color: var(--container-color);

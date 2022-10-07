@@ -18,16 +18,27 @@
             display: inline-block;
             margin-right:10px;
             padding:5px 10px;
+            border-radius: 6px;
+            transition: .3s;
+            &:hover{
+                color:#fff;
+                background-color:#000;
+            }
         }
         &-signup{
             padding:5px 14px;
             border-radius: 6px;
-            color:#fff;
-            background-color: black;
+            color:#000;
+            transition: .3s;
+            &:hover{
+                color:#fff;
+                background-color:#000;
+            }
         }
+        
     }
     &__menu{
-        @media screen and (max-width:767px){
+        @media screen and (max-width:850px){
             position: fixed;
             background-color: var(--container-color);
             box-shadow: 0 0 4px rgba(0,0,0,.1) ;

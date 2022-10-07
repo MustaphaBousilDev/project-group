@@ -1,0 +1,141 @@
+.signup-body{
+    .nav{
+        height:var(--header-height);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__compt{
+            display: flex;
+            &-login{
+                flex:1;
+                display: inline-block;
+                margin-right:10px;
+                padding:5px 10px;
+                border-radius: 6px;
+                transition: .3s;
+                &:hover{
+                    color:#fff;
+                    background-color:#000;
+                }
+            }
+            &-signup{
+                padding:5px 14px;
+                border-radius: 6px;
+                color:#000;
+                transition: .3s;
+                color:#fff;
+                background-color:#000;
+            }
+            
+        }
+        
+    }
+    .signup{
+        margin-top: 72px;
+        height:500px; 
+        //background-color: red;
+        padding:30px 0px;
+        @media screen and (max-width:1080px){
+            padding:30px 0px;
+        }
+        h1{text-align: center;}
+        .content{
+            width: 100%;
+            height: 100%;
+            form{
+                width: 100%;
+                //background-color: yellow;
+                min-height:calc(100% - 60px); 
+                padding:20px;
+                display:flex; 
+                flex-direction: column;
+                border: 1px solid rgb(148, 141, 141);
+                border-radius: 4px;
+                @media screen and (max-width:800px){
+                    padding:10px;
+                }
+                .box{
+                    width: 100%;
+                    display: flex;
+                    margin-top: 10px;
+                    @media screen and (max-width:600px){
+                        flex-direction: column;
+                        margin-top: 0;
+                    }
+                    .field{
+                        flex:1;
+                        padding:5px 20px;
+                        //background-color: red;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        input{
+                            width:100%;
+                            margin: 0 auto;
+                            padding: 13px 30px;
+                            border:none;outline: none;
+                            border-bottom:1px solid rgb(115, 109, 109);
+                            @media screen and (max-width:600px){
+                                padding: 8px 30px;
+                            }
+                            &:focus,
+                            &:focus + i{
+                                color:#000;
+                                border-color: #000;
+                            }
+                        }
+                        i{
+                            position:absolute;left:25px;
+                            top:50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+                .re{
+                    margin-top: 5px;
+                    padding-left:20px;
+                    font-size: 11px;
+                    display: flex;
+                    
+                    color:rgb(173, 171, 171);
+                    input{
+                        margin-right: 5px;
+                    }
+                    a{
+                        font-size: 10px;
+                        color:rgb(94, 94, 239);
+                        font-weight: bold;
+                    }
+                }
+                .btns{
+                    padding-left: 20px;
+                    button{
+                        margin-top: 10px;
+                        border: none;
+                        outline: none;
+                        background-color: rgb(88, 88, 255);
+                        color:#fff;
+                        padding:10px 20px;
+                        border-radius: 4px;
+                        opacity: .8;
+                        transition: opacity .3s;
+                        cursor: pointer;
+                        &:hover{opacity: 1;}
+                    }
+                    
+                }
+                .link-sign{
+                    padding-left: 20px;
+                    font-size: 12px;
+                    @media screen and (max-width:600px){
+                        margin-top: 0;
+                    }
+                    a{color:rgb(88, 88, 255);letter-spacing:-1px;}
+                }
+            }
+        }
+    }
+    .footer{
+        margin-top: 0;
+    }
+}

@@ -93,12 +93,19 @@ img {
 
 body.dark-theme {
   --first-color: hsl(var(--hue), var(--sat),75%);
-  --title-color: hsl(var(--hue), 4%,95%);
+  --title-color: hsl(60, 1%, 39%);
   --text-color: hsl(var(--hue), 4%,80%);
   --body-color: hsl(var(--hue), 8%, 13%);
   --container-color: hsl(var(--hue), 8%, 16%);
   --scroll-bar-color: hsl(var(--hue), 4%,32%);
   --scroll-thumb-color: hsl(var(--hue), 4%,24%);
+}
+
+/*===========Button Dark/Light===============*/
+.change-theme {
+  color: var(--title-color);
+  font-size: 1.8rem;
+  cursor: pointer;
 }
 
 .section {
@@ -163,9 +170,9 @@ body.dark-theme {
   padding: 5px 14px;
   border-radius: 6px;
   color: #fff;
-  background-color: black;
+  background-color: #000;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 850px) {
   .nav__menu {
     position: fixed;
     background-color: var(--container-color);
@@ -206,7 +213,7 @@ body.dark-theme {
   margin-top: 130px;
   height: 330px;
   padding: 30px;
-  background-color: #000;
+  background-color: var(--title-color);
   border-radius: 6px;
 }
 @media screen and (max-width: 900px) {
@@ -362,7 +369,7 @@ body.dark-theme {
 
 .post__container {
   display: flex;
-  background-color: #000;
+  background-color: var(--title-color);
   min-height: 330px;
   border-radius: 6px;
   padding: 30px;
@@ -506,7 +513,7 @@ body.dark-theme {
   height: 32%;
 }
 .work__container .box:nth-child(2) {
-  width: calc(22% -10px);
+  width: calc(22% - 10px);
 }
 .work__container .box:nth-child(2) .footer-3 {
   width: 98%;
@@ -514,7 +521,7 @@ body.dark-theme {
   height: 80%;
 }
 .work__container .box:nth-child(3) {
-  width: calc(28% -10px);
+  width: calc(28% - 10px);
 }
 .work__container .box:nth-child(3) .footer-2 {
   width: 98%;
@@ -528,7 +535,7 @@ body.dark-theme {
   height: calc(50%);
 }
 .work__container .box:nth-child(4) {
-  width: calc(22% -10px);
+  width: calc(22% - 10px);
 }
 .work__container .box:nth-child(4) .footer-7 {
   width: 98%;
@@ -583,7 +590,7 @@ body.dark-theme {
     height: 50%;
   }
   .work__container .box:nth-child(2) {
-    width: calc(50% -10px);
+    width: calc(50% - 10px);
   }
   .work__container .box:nth-child(2) .footer-3 {
     width: 98%;
@@ -881,6 +888,187 @@ body.dark-theme {
   .footer {
     margin-top: 1100px;
   }
+}
+
+.login-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.login-body .login {
+  margin-top: 72px;
+  height: 550px;
+  padding: 10px;
+}
+@media screen and (max-width: 1085px) {
+  .login-body .login {
+    height: 500px;
+  }
+}
+.login-body .login h1 {
+  text-align: center;
+}
+.login-body .login .content {
+  border: 1px solid #b8b8b8;
+  height: 90%;
+  display: flex;
+}
+@media screen and (max-width: 600px) {
+  .login-body .login .content {
+    width: 100%;
+  }
+}
+.login-body .login .content form {
+  flex: 1;
+  order: 2;
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 1085px) {
+  .login-body .login .content form {
+    padding: 40px 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .login-body .login .content form {
+    padding: 40px 10px;
+  }
+}
+.login-body .login .content form .field {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+@media screen and (max-width: 1085px) {
+  .login-body .login .content form .field {
+    min-height: 60px;
+  }
+}
+.login-body .login .content form .field input {
+  width: 100%;
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  border-bottom: 1px solid #d4cccc;
+}
+@media screen and (max-width: 1085px) {
+  .login-body .login .content form .field input {
+    padding: 15px 30px;
+  }
+}
+.login-body .login .content form .field input::placeholder {
+  margin-left: 60px;
+  color: #d4cccc;
+}
+.login-body .login .content form .field input:focus + i.email,
+.login-body .login .content form .field input:focus + i.lock {
+  color: #333;
+}
+.login-body .login .content form .field input:focus {
+  border-color: #333;
+}
+.login-body .login .content form .field i.email, .login-body .login .content form .field i.lock {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #d4cccc;
+}
+.login-body .login .content form .field.buttons {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.login-body .login .content form .field.buttons .remember {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.login-body .login .content form .field.buttons .remember .re {
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+}
+.login-body .login .content form .field.buttons .remember .re input {
+  width: 15px;
+  height: 15px;
+}
+.login-body .login .content form .field.buttons .remember a {
+  font-size: 12px;
+  text-decoration: underline;
+}
+.login-body .login .content form .field.buttons .log-btn {
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.login-body .login .content form .field.buttons .log-btn button {
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 10px;
+  color: #fff;
+  transition: opacity 0.3s;
+  height: 40px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.login-body .login .content form .field.buttons .log-btn button:hover {
+  opacity: 1;
+}
+.login-body .login .content form .field.buttons .log-btn button.log {
+  background-color: #2766ed;
+}
+.login-body .login .content form .field.buttons .log-btn button.goo {
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #636161;
+}
+.login-body .login .content form .field.buttons .log-btn button.goo svg {
+  width: 30px;
+  height: 30px;
+}
+.login-body .login .content form .link-sign {
+  margin-top: 180px;
+  font-size: 11px;
+}
+@media screen and (max-width: 1085px) {
+  .login-body .login .content form .link-sign {
+    margin-top: 90px;
+  }
+}
+.login-body .login .content form .link-sign a {
+  font-size: 12px;
+  color: #2766ed;
+}
+.login-body .login .content .image {
+  flex: 1;
+  order: 1;
+}
+@media screen and (max-width: 1085px) {
+  .login-body .login .content .image {
+    display: none;
+  }
+}
+.login-body .login .content .image img {
+  width: 100%;
+  height: 100%;
+}
+.login-body .footer {
+  margin-top: 0;
 }
 
 @media screen and (min-width: 767px) {
