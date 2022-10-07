@@ -62,7 +62,7 @@
   row-gap: 1.5rem;
 }
 .nav__link, .nav__logo, .nav__toggle {
-  color: var(--title-color);
+  color: gray;
   font-weight: var(--font-semi-bold);
 }
 .nav__toggle {
