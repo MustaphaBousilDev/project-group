@@ -6,6 +6,54 @@ body.dark-theme{
     --container-color: hsl(var(--hue), 8%, 16%);
     --scroll-bar-color: hsl(var(--hue), 4%,32%);
     --scroll-thumb-color: hsl(var(--hue), 4%,24%);
+    .scroll-header{
+        box-shadow: 0 2px 4px rgba(118, 115, 115, 0.861);
+    }
+    
+    .nav{
+            &__compt{
+                &-login{
+                    color:#fff;
+                    &:hover{
+                        color:#000;
+                        background-color:#fff;
+                    }
+                    
+                }
+                &-signup{
+                    color:#fff;
+                    &:hover{
+                        color:#000;
+                        background-color:#fff;
+                    }
+                }
+            }
+    }
+    header .nav .nav__list li a{
+        color:#fff;
+    }
+    
+    .signup-body{
+        .nav{
+            &__compt{
+                &-login{
+                    color:#fff;
+                    &:hover{
+                        color:#000;
+                        background-color:#fff;
+                    }
+                }
+                &-signup{
+                    color:#000;
+                    background-color: #fff;
+                    
+                }
+                
+            }
+            
+        }
+    }
+    
 }
 /*===========Button Dark/Light===============*/
 .change-theme{

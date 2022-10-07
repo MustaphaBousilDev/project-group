@@ -7,6 +7,37 @@ body.dark-theme {
   --scroll-bar-color: hsl(var(--hue), 4%,32%);
   --scroll-thumb-color: hsl(var(--hue), 4%,24%);
 }
+body.dark-theme .scroll-header {
+  box-shadow: 0 2px 4px rgba(118, 115, 115, 0.861);
+}
+body.dark-theme .nav__compt-login {
+  color: #fff;
+}
+body.dark-theme .nav__compt-login:hover {
+  color: #000;
+  background-color: #fff;
+}
+body.dark-theme .nav__compt-signup {
+  color: #fff;
+}
+body.dark-theme .nav__compt-signup:hover {
+  color: #000;
+  background-color: #fff;
+}
+body.dark-theme header .nav .nav__list li a {
+  color: #fff;
+}
+body.dark-theme .signup-body .nav__compt-login {
+  color: #fff;
+}
+body.dark-theme .signup-body .nav__compt-login:hover {
+  color: #000;
+  background-color: #fff;
+}
+body.dark-theme .signup-body .nav__compt-signup {
+  color: #000;
+  background-color: #fff;
+}
 
 /*===========Button Dark/Light===============*/
 .change-theme {

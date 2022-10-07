@@ -1,6 +1,6 @@
 @import 'config/variables';
 @import 'base/base';
-@import 'theme/theme';
+
 
 @import 'layout/layout';
 @import 'components/header';
@@ -15,6 +15,6 @@
 @import 'components/footer';
 @import 'components/login';
 @import 'components/sign-up';
-
+@import 'theme/theme';
 @import 'components/media-query';
 

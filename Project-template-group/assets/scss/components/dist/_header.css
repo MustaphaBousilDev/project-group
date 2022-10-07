@@ -74,3 +74,8 @@
 .show-menu {
   top: calc(var(--header-height) + 1rem);
 }
+
+/*Change Background Header*/
+.scroll-header {
+  box-shadow: 0 2px 4px rgba(7, 7, 7, 0.1);
+}
