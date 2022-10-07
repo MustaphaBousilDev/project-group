@@ -87,11 +87,11 @@
 }
 @media screen and (max-width: 750px) {
   .footer {
-    margin-top: 320px;
+    margin-top: 400px;
   }
 }
 @media screen and (max-width: 600px) {
   .footer {
-    margin-top: 900px;
+    margin-top: 1100px;
   }
 }

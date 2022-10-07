@@ -63,3 +63,15 @@ function scrollHeader(){
     }
 }
 window.addEventListener('scroll',scrollHeader)
+
+//--------------------------------------------------
+/*============Show Scroll Top==============*/
+function scrollUp(){
+    const scrollTop=document.getElementById('scroll-up')
+    if(this.scrollY >=560) {
+        scrollTop.classList.add('show-scroll')
+    }else{
+        scrollTop.classList.remove('show-scroll')
+    }
+}
+window.addEventListener('scroll',scrollUp)
