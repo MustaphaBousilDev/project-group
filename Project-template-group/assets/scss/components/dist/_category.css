@@ -14,6 +14,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #ededed;
+  height: 80px;
+  margin-top: 10px;
+  border-radius: 8px;
 }
 @media screen and (max-width: 800px) {
   .category__container .images {

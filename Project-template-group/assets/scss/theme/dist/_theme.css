@@ -7,6 +7,12 @@ body.dark-theme {
   --scroll-bar-color: hsl(var(--hue), 4%,32%);
   --scroll-thumb-color: hsl(var(--hue), 4%,24%);
 }
+body.dark-theme .category__container .images {
+  background-color: gray;
+  height: 80px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
 body.dark-theme .scroll-header {
   box-shadow: 0 2px 4px rgba(118, 115, 115, 0.861);
 }
