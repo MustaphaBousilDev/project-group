@@ -116,12 +116,16 @@
                         display: flex;
                         justify-content: space-between;
                         width: 100%;
+                        
+                        
                         .re{
-                            font-size: 11px;
+                            
                             
                             display: flex;
+                            
                             align-items: center;
-                            input{width:15px;height:15px;margin-right:5px}
+                            input{margin-right:5px}
+                            span{font-size:8px;}
                         }
                         a{
                             font-size:12px;text-decoration: underline;

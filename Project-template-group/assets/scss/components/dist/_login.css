@@ -130,14 +130,14 @@
   width: 100%;
 }
 .login-body .login .content form .field.buttons .remember .re {
-  font-size: 11px;
   display: flex;
   align-items: center;
 }
 .login-body .login .content form .field.buttons .remember .re input {
-  width: 15px;
-  height: 15px;
   margin-right: 5px;
+}
+.login-body .login .content form .field.buttons .remember .re span {
+  font-size: 8px;
 }
 .login-body .login .content form .field.buttons .remember a {
   font-size: 12px;
