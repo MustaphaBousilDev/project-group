@@ -1,19 +1,12 @@
 "use strict";
 
 //Show Menu Links
-var showMenu = function showMenu(toggleId, navId) {
-  var toggle = document.getElementById(toggleId),
-      nav = document.getElementById(navId); //validate that variable exist
-
-  if (toggle && nav) {
-    toggle.addEventListener('click', function () {
-      //we add the show-menu class to the div tag wwith
-      nav.classList.toggle('show-menu');
-    });
-  }
-};
-
-showMenu('nav-toggle', 'nav-menu'); //////////////////////////////////////////////////
+////////////////////////////////////////
+var toggle = document.getElementById('nav-toggle');
+var nav = document.getElementById('nav-menu');
+toggle.addEventListener('click', function () {
+  nav.classList.toggle('show-menu');
+}); //////////////////////////////////////////////////
 //remove list ul if click li
 
 var navLink = document.querySelectorAll('.nav__link');
